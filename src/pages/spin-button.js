@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/util.css';
 
 const MIN_NUMBER = 0;
 const MAX_NUMBER = 3;
@@ -55,7 +54,14 @@ const SpinButton = () => {
   };
 
   return (
-    <main>
+    <main
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <h2>승객 선택</h2>
       <section>
         <h3>성인</h3>
